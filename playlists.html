@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playlists — Rootnote</title>
+<meta name="description" content="Curated playlists on Spotify, Apple Music, and SoundCloud to go with Rootnote's coverage.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="wordmark">Rootnote<span class="dot">.</span></a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="articles.html">Articles</a>
+      <a href="playlists.html" aria-current="page">Playlists</a>
+      <a href="videos.html">Videos</a>
+      <a href="about.html">About</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="about-hero" style="padding-bottom:20px;">
+  <div class="wrap">
+    <h1 style="max-width:20ch;">Playlists</h1>
+    <p>Play it right from the page — no separate app needed. Swap any embed below for your own playlist or track in a couple of minutes; instructions are underneath each section.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+
+    <div class="playlist-block">
+      <div>
+        <span class="playlist-source">Spotify</span>
+        <h3>Today's Top Hits</h3>
+        <p>A placeholder embed of Spotify's own flagship playlist. To use your own: open any playlist in Spotify, click the "..." menu, then Share &gt; Embed playlist, and paste the src URL it gives you into the iframe below.</p>
+      </div>
+      <div class="embed-wrap">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="playlist-block">
+      <div>
+        <span class="playlist-source">Apple Music</span>
+        <h3>Today's Hits</h3>
+        <p>Apple's official embed player, no developer account required for a basic playlist embed like this one. To use your own: open the playlist on music.apple.com, click "..." &gt; Share &gt; Embed, and copy the iframe it generates.</p>
+      </div>
+      <div class="embed-wrap">
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%; max-width:660px; overflow:hidden; background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/todays-hits/pl.f4d106fed2bd41149aaacabb233eb5eb"></iframe>
+      </div>
+    </div>
+
+    <div class="playlist-block">
+      <div>
+        <span class="playlist-source">SoundCloud</span>
+        <h3>From the crates</h3>
+        <p>A demo track standing in for your own upload or reposted set. To use your own: open the track on soundcloud.com, click Share &gt; Embed, and copy the iframe — this is the best option for demos, remixes, or artists without a label deal.</p>
+      </div>
+      <div class="embed-wrap">
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&color=%23b5292e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Rootnote. Built and written independently.</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="about.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

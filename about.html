@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Rootnote</title>
+<meta name="description" content="About Rootnote and how to get in touch.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="wordmark">Rootnote<span class="dot">.</span></a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="articles.html">Articles</a>
+      <a href="playlists.html">Playlists</a>
+      <a href="videos.html">Videos</a>
+      <a href="about.html" aria-current="page">About</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="about-hero">
+  <div class="wrap">
+    <h1>About Rootnote</h1>
+    <p>Rootnote covers current events in music alongside the pop culture, history, and influences behind them — new releases sit next to the samples, scenes, and artists that made them possible. Replace this paragraph with your own founding story and beat.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap" style="display:grid; grid-template-columns: 1fr 1fr; gap:56px;">
+    <div>
+      <div class="section-head" style="border:none; margin-bottom:18px; padding-bottom:0;">
+        <h2 style="font-size:1.6rem;">Get in touch</h2>
+      </div>
+      <p style="color:var(--ink-soft); max-width:44ch;">Pitches, corrections, and playlist submissions welcome. This form doesn't send anywhere yet — see the note below it for a free, no-code way to connect it to your email.</p>
+    </div>
+    <form class="contact-form">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-solid" style="align-self:flex-start;">Send message</button>
+      <p class="form-status" style="font-size:0.88rem; color:var(--ink-faint);"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Rootnote. Built and written independently.</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="about.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
