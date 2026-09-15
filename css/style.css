@@ -93,6 +93,20 @@ input:focus-visible {
 
 .wordmark .dot { color: var(--red); }
 
+.wordmark {
+  height: 40px;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .logo-img { height: 32px; }
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -437,6 +451,63 @@ section + section { border-top: 1px solid var(--line); }
   padding-left: 22px;
   margin: 34px 0;
   color: var(--ink);
+}
+
+/* ---------- Rootnote U ---------- */
+
+.lesson-card {
+  border: 1px solid var(--line);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lesson-card .lesson-num {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--gold);
+  font-size: 1rem;
+}
+
+.lesson-card h3 {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+.lesson-card p { color: var(--ink-soft); font-size: 0.96rem; margin: 0; }
+
+.lesson-card.upcoming { opacity: 0.55; }
+
+.decade-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 0 8px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.decade-nav a {
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 7px 14px;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+
+.decade-nav a:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.article-body .decade-year {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--red);
+  font-size: 1.05rem;
+  margin: 0 0 4px;
 }
 
 /* ---------- About page ---------- */
