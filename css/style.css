@@ -297,6 +297,43 @@ section + section { border-top: 1px solid var(--line); }
 
 .card { display: flex; flex-direction: column; }
 
+.card-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin-bottom: 16px;
+  background: var(--paper-shade);
+}
+
+.hero-banner {
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-header-img {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  margin: 8px 0 0;
+}
+
+.inline-photo {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin: 28px 0;
+}
+
+.inline-photo + p.caption,
+.photo-caption {
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  margin: -22px 0 30px;
+}
+
 .card-tag {
   font-size: 0.78rem;
   font-weight: 600;
@@ -479,6 +516,88 @@ section + section { border-top: 1px solid var(--line); }
 .lesson-card p { color: var(--ink-soft); font-size: 0.96rem; margin: 0; }
 
 .lesson-card.upcoming { opacity: 0.55; }
+
+/* ---------- Curation page ---------- */
+
+.curation-intro {
+  max-width: 68ch;
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+}
+
+.moodboard-playlist {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 44px 0;
+}
+
+.moodboard-playlist + .moodboard-playlist {
+  border-top: 1px solid var(--line);
+}
+
+.moodboard-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
+
+.moodboard-playlist h3 {
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  margin: 0 0 4px;
+  text-transform: lowercase;
+}
+
+.moodboard-tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--red);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.moodboard-playlist p.desc {
+  color: var(--ink-soft);
+  font-size: 1rem;
+  margin: 0 0 22px;
+  max-width: 60ch;
+}
+
+.platform-embeds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.platform-embeds .embed-slot h4 {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+  margin: 0 0 10px;
+}
+
+.embed-slot.pending {
+  border: 1px dashed var(--line);
+  padding: 20px;
+  color: var(--ink-faint);
+  font-size: 0.88rem;
+  height: 352px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 780px) {
+  .moodboard-playlist { grid-template-columns: 1fr; }
+  .platform-embeds { grid-template-columns: 1fr; }
+}
 
 .decade-nav {
   display: flex;
